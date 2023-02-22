@@ -51,7 +51,8 @@
 <script>
     const phraseHolder = document.querySelector("#phrase")
     phraseHolder.addEventListener("input", (e) => {
-        const phrase = e.target.value
+        let phrase = e.target.value
+        phrase = String(phrase).trim()
     
         const phraseButton = document.querySelector("#phrase-button")
 
